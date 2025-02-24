@@ -4,7 +4,7 @@
 - 한 학기 동안 매주 금요일마다 모여서 각자 **개인 프로젝트**로 게임 만들기
 
 .
-- https://fortunate-tuck-687.notion.site/18c838520b328087bd83ff9051bddbb3
+- https://linktr.ee/igemoim
   - 국민대 게임제작 커뮤니티 **"이게모임"** 소속 인원들이 모여서 활동합니다.
 
 .
