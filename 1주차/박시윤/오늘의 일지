@@ -1,0 +1,20 @@
+RedLine Rumble을 따라잡기 위해 에셋을 몇가지 선정하였다.
+
+  1. 플레이어 차량 - https://assetstore.unity.com/packages/p/race-car-package-141690
+  2. 도로 - https://assetstore.unity.com/packages/3d/environments/urban/free-cartoon-pack-buildings-298506
+  3. 경찰차와 헬기 - http://assetstore.unity.com/packages/p/police-car-helicopter-52496
+  4. 민간 차량 - https://assetstore.unity.com/packages/3d/vehicles/free-low-poly-vehicle-265813
+
+위의 에셋들을 가지고 당분간 계속 진행할 것 같다.
+
+ RedLine Rumble은 도로가 무한으로 생성되는 캐주얼 레이싱이다. 따라서 플레이어가 직접 전진하는 것 보단 플레이어는 가만히 있고 주변의 물체들이 플레이어에 속도에 따라 움직이도록 설계하는 것이 좋을 것 같다.
+무한 도로 생성을 위해 두가지 방식을 고안해 냈다. 하나는 플레이어가 도로의 끝에 닿을 때 마다 앞쪽에 새로운 도로를 생성하고, 플레이어 뒤로 간 도로들은 사라지도록 하는 방식이다.
+다른 하나는 플레이어의 뒤쪽으로 도로가 완전히 넘어가면 해당 도로가 다시 플레이어 앞쪽으로 이동하는 형식이다. 
+첫번째 방식은 도로를 이었을 때 빈공간이 생기기 매우 쉽고 계속 게임오브젝트를 생성하기 때문에 성능에 안좋은 영향을 미치는 것 같아서 두번째 방식을 채택하였다. 
+이어서 플레이어의 이동을 간단하게 구현하였다. 현재는 InputSystem을 2차원 입력이 아닌 키 하나씩으로 입력을 받아 좌우 이동만 되도록 간단하게 설계하였다. 다만, 더 나을지도 모르는 새로운 방식의 시도를 위해 Input System을 더 살펴볼 생각이다.
+
+TO DO:
+ - 차량 가속 시스템 : 변속
+ - 일반 차량 생성 알고리즘
+ - 상대방 또는 경찰 AI
+   -> 이후 차량 선택 씬으로 이으면 될 것 같다.
